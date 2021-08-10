@@ -6,7 +6,7 @@ library(smoothr)
 
 tic()
 ##read data
-geom <- st_read('C:\\Users\\MCOLOMBINI\\Documents\\Deptos_argentina\\testdata.gpkg')%>% 
+geom <- st_read('testdata.gpkg')%>% 
   mutate(osm_id = ifelse(is.na(osm_id), 10724,osm_id))
 
 
